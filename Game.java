@@ -23,12 +23,7 @@ public class Game {
         return;
       }
     }
-    // displayBoard();
-    // playerMove();
-    // displayBoard();
-    // playerMove();
-    // displayBoard();
-    // playerMove();
+
   }
 
   private void displayBoard() {
@@ -77,8 +72,6 @@ public class Game {
       
     }
 
-    // Tree pine = new Pine()
-    // Car red = new Car()
   }
 
   // declaring the function
@@ -117,7 +110,6 @@ public class Game {
     Coin currentCoin = board[posX][posY];
     posX += dirX;
     posY += dirY;
-    // home: write a base case to check if neighbour is out of bound
 
     if (posX < 0 || posX >= board.length || posY < 0 || posY >= board[0].length) {
       return;
@@ -144,7 +136,7 @@ public class Game {
       return;
     }
     
-    // make the recursive call here
+    // make the recursive call here to check every neighbour in a direction
     checkNeighbour(nInRow, posX, posY, dirX, dirY);
     
   }
